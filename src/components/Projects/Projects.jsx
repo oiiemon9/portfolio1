@@ -29,11 +29,24 @@ const Projects = () => {
               </div>
               <div class="p-8">
                 <div>
-                  <button className="btn rounded-full btn-sm">Live Link</button>
+                  <a
+                    href="https://study-mate-94d47.web.app/"
+                    target="_blank"
+                    className="btn rounded-full btn-sm bg-gradient-to-r from-purple-500 to-indigo-600 text-white hover:from-purple-600 hover:to-indigo-700 mb-4 transition-colors duration-300 mr-2"
+                  >
+                    Live Link
+                  </a>
+                  <a
+                    href="https://github.com/oiiemon9/study-mate-client"
+                    target="_blank"
+                    className="btn rounded-full btn-sm mb-4"
+                  >
+                    GitHub
+                  </a>
                 </div>
                 <p class="text-gray-500 dark:text-gray-400 text-sm">
-                  Mojju, a venture powered by the professional team at Zeroqode,
-                  is at the...
+                  StudyMate is a website where students can get help based on
+                  their subjects.
                 </p>
               </div>
             </div>
@@ -53,12 +66,25 @@ const Projects = () => {
                 </div>
               </div>
               <div class="p-8">
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Metla
-                </h3>
+                <div>
+                  <a
+                    href="https://my-toy-topia.web.app/"
+                    target="_blank"
+                    className="btn rounded-full btn-sm bg-gradient-to-r from-purple-500 to-indigo-600 text-white hover:from-purple-600 hover:to-indigo-700 mb-4 transition-colors duration-300 mr-2"
+                  >
+                    Live Link
+                  </a>
+                  <a
+                    href="https://github.com/oiiemon9/toy-topia"
+                    target="_blank"
+                    className="btn rounded-full btn-sm mb-4"
+                  >
+                    GitHub
+                  </a>
+                </div>
                 <p class="text-gray-500 dark:text-gray-400 text-sm">
-                  An all-in-one crypto frontend for managing coins, NFTs, DeFi
-                  activity and a lot more -...
+                  ToyTopia is a website where all kinds of children’s toys are
+                  available.
                 </p>
               </div>
             </div>
@@ -78,12 +104,25 @@ const Projects = () => {
                 </div>
               </div>
               <div class="p-8">
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Neurai
-                </h3>
+                <div>
+                  <a
+                    href="https://shop-now-jet.vercel.app/"
+                    target="_blank"
+                    className="btn rounded-full btn-sm bg-gradient-to-r from-purple-500 to-indigo-600 text-white hover:from-purple-600 hover:to-indigo-700 mb-4 transition-colors duration-300 mr-2"
+                  >
+                    Live Link
+                  </a>
+                  <a
+                    href="https://github.com/oiiemon9/shop-now"
+                    target="_blank"
+                    className="btn rounded-full btn-sm mb-4"
+                  >
+                    GitHub
+                  </a>
+                </div>
                 <p class="text-gray-500 dark:text-gray-400 text-sm">
-                  Zeroqode's AI Kit Template, developed for Rapid Dev, is a
-                  practical tool for...
+                  ShopNow is an e-commerce website where a seller can sell their
+                  own products.
                 </p>
               </div>
             </div>
