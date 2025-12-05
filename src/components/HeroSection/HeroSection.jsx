@@ -27,8 +27,8 @@ const HeroSection = () => {
     setLoading(true);
 
     const link = document.createElement('a');
-    link.href = '/Emon_Mollah_Resume.pdf';
-    link.download = 'Emon_Mollah_Resume.pdf';
+    link.href = '/emon-mollah-resume.pdf';
+    link.download = 'emon-mollah-resume.pdf';
 
     document.body.appendChild(link);
     link.click();
