@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const HeroSection = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handleDownload = () => {
+    setLoading(true);
+
+    const link = document.createElement('a');
+    link.href = '/Emon_Mollah_Resume.pdf';
+    link.download = 'Emon_Mollah_Resume.pdf';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  };
   return (
     <section className="font-display bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 antialiased">
       <div className="flex flex-col items-center justify-center min-h-screen text-center px-4 py-16">
@@ -24,8 +41,11 @@ const HeroSection = () => {
             my passion, and I enjoy building clean, responsive, high-quality,
             and real-world web applications that solve real problems.
           </p>
-          <button className="bg-primary text-white dark:text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-offset-background-dark dark:focus:ring-gray-500">
-            Download Resume
+          <button
+            onClick={handleDownload}
+            className="bg-primary text-white dark:text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-offset-background-dark dark:focus:ring-gray-500"
+          >
+            {loading ? 'Loading...' : 'Download Resume'}
           </button>
         </div>
       </div>

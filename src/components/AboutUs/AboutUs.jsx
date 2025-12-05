@@ -29,9 +29,9 @@ const AboutUs = () => {
               />
             </div>
             <div className="order-1 lg:order-2 flex flex-col justify-center">
-              <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-12">
+              <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-12">
                 About{' '}
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600">
                   Us
                 </span>
               </h2>
