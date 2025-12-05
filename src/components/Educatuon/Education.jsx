@@ -1,17 +1,56 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
 
 const Education = () => {
   return (
-    <section className="bg-background-light dark:bg-background-dark font-display antialiased">
+    <section
+      id="education"
+      className="bg-background-light dark:bg-background-dark font-display antialiased"
+    >
       <div className="flex items-center justify-center">
-        <section className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-gray-200 mb-12">
+        <section className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
+          <motion.h2
+            className="text-4xl font-bold text-center text-gray-800 dark:text-gray-200 mb-12"
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600">
               Education
             </span>
-          </h2>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 lg:mt-16">
-            <div className="flex items-start gap-6 rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm">
+          </motion.h2>
+
+          <motion.div
+            className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 lg:mt-16"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.25 }}
+          >
+            <motion.div
+              className="flex items-start gap-6 rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm"
+              variants={itemVariants}
+            >
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                   SSC | MUK High School
@@ -21,8 +60,12 @@ const Education = () => {
                   Subject: Accounting
                 </p>
               </div>
-            </div>
-            <div className="flex items-start gap-6 rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm">
+            </motion.div>
+
+            <motion.div
+              className="flex items-start gap-6 rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm"
+              variants={itemVariants}
+            >
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                   HSC | Gazipur Metropolitan College
@@ -32,8 +75,12 @@ const Education = () => {
                   Subject: Accounting
                 </p>
               </div>
-            </div>
-            <div className="flex items-start gap-6 rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm">
+            </motion.div>
+
+            <motion.div
+              className="flex items-start gap-6 rounded-lg bg-white dark:bg-gray-800 p-6 shadow-sm"
+              variants={itemVariants}
+            >
               <div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                   BBA | National University
@@ -43,8 +90,8 @@ const Education = () => {
                   Subject: Accounting
                 </p>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </section>
       </div>
     </section>
