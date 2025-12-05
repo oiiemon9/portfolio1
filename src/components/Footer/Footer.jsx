@@ -9,12 +9,17 @@ const Footer = () => {
           <div className="border-b border-gray-700 mb-8"></div>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center font-bold text-white text-lg shadow-md">
-                S
-              </div>
-              <span className="text-lg font-semibold text-gray-200 dark:text-gray-200">
-                slothui
-              </span>
+              <a
+                className="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2 text-white"
+                href="/"
+              >
+                <img
+                  className="h-12 w-12"
+                  src="https://i.ibb.co.com/4Z5YYw8j/Chat-GPT-Image-Dec-5-2025-05-48-32-PM-removebg-preview.png"
+                  alt=""
+                />
+                Emon
+              </a>
             </div>
             <div className="text-sm text-gray-400 dark:text-gray-400 text-center">
               Copyright {new Date().getFullYear()}© Emon

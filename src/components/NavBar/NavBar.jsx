@@ -9,10 +9,15 @@ const NavBar = () => {
             <div className="flex items-center justify-between">
               <div className="flex-shrink-0">
                 <a
-                  className="text-2xl font-bold text-gray-900 dark:text-white"
-                  href="#"
+                  className="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2"
+                  href="/"
                 >
-                  Xander.
+                  <img
+                    className="h-12 w-12"
+                    src="https://i.ibb.co.com/4Z5YYw8j/Chat-GPT-Image-Dec-5-2025-05-48-32-PM-removebg-preview.png"
+                    alt=""
+                  />
+                  Emon
                 </a>
               </div>
               <div className="hidden md:flex items-center space-x-8">
