@@ -1,0 +1,36 @@
+import React from 'react';
+
+const HeroSection = () => {
+  return (
+    <section class="font-display bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 antialiased">
+      <div class="flex flex-col items-center justify-center min-h-screen text-center px-4 py-16">
+        <main class="flex flex-col items-center justify-center space-y-8 w-full max-w-4xl">
+          <div class="p-2 bg-cyan-100/50 dark:bg-cyan-900/30 rounded-full">
+            <img
+              alt="Avatar of Emon mollah"
+              class="w-24 h-24 object-cover rounded-full"
+              src="https://i.ibb.co.com/LzQv13d2/download.png"
+            />
+          </div>
+          <p class="text-xl font-medium text-gray-800 dark:text-gray-200">
+            Hi, I’m Emon 👋
+          </p>
+          <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
+            A MERN Stack Developer <br /> who builds fast <br /> and modern web
+            applications
+          </h1>
+          <p class="max-w-xl text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+            I'm a professional web developer from Bangladesh. Web development is
+            my passion, and I enjoy building clean, responsive, high-quality,
+            and real-world web applications that solve real problems.
+          </p>
+          <button class="bg-primary text-white dark:text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-offset-background-dark dark:focus:ring-gray-500">
+            Download Resume
+          </button>
+        </main>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
